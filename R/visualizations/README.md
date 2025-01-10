@@ -1,7 +1,7 @@
-# Life Expectancy Analysis Project
+# Life Expectancy Trends in England and Wales: A Visual Exploration
 
 ## Overview
-This project analyzes life expectancy trends and mortality rates in England and Wales, examining the relationships between deprivation indices, avoidable mortality, and regional variations.
+This project explores life expectancy trends in England and Wales through various data visualizations. It highlights socio-economic disparities and presents insights into how factors like deprivation and preventable mortality affect public health outcomes.
 
 ## Project Structure
 ```
@@ -61,30 +61,32 @@ source("main.R")
 
 ## File Descriptions
 
-- `01_dependencies.R`: Loads all required packages
-- `02_data_processing.R`: Data cleaning and processing functions
-- `03_visualization.R`: All visualization functions
-- `04_analysis.R`: Statistical analysis and correlation studies
-- `05_models.R`: Predictive modeling with Random Forest and Linear Regression
-- `main.R`: Main script that runs the entire analysis pipeline
+### `life_expectancy_plots.R`
+Contains R scripts for generating visualizations related to life expectancy analysis. The script processes demographic data and creates various plots including:
+- Time series trends of life expectancy
+- Geographic distribution maps
+- Comparative analysis charts
 
-## Outputs
+### `deprivation_plots.R`
+Implements visualization routines for deprivation indices, including:
+- Multi-dimensional deprivation scores
+- Regional comparison plots
+- Correlation analysis with health outcomes
 
-The analysis produces several outputs:
-- Processed datasets (in `outputs/processed/`)
-- Visualization plots (in `outputs/figures/`)
-- Model results (in `outputs/models/`)
+### `composite_visualization.png`
+A comprehensive visualization that combines key insights from both life expectancy and deprivation analyses, providing a holistic view of socio-health relationships.
 
-## Results
+## Outputs and Results
+The project generates several types of visualizations:
+- Interactive maps showing regional health disparities
+- Time-series plots of life expectancy trends
+- Heat maps of deprivation indices
+- Correlation matrices between social and health factors
 
-Key visualizations include:
-1. Life expectancy trends by region and sex
-2. Mortality rates by age and sex
-3. Deprivation index analysis
-4. Correlation matrices
-5. Model performance comparisons
+All visualizations are exported in high-resolution PNG format, suitable for both digital display and print media.
 
 ## Contributing
+We welcome contributions to the SocioHealthViz project! Here's how you can help:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
@@ -95,3 +97,6 @@ Key visualizations include:
 ## License
 
 This project is licensed under the MIT License.
+
+---
+For more information or support, please open an issue in the repository or contact the project maintainers.

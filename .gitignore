@@ -1,0 +1,40 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+
+# Data files
+*.xlsx
+*.xls
+*.csv
+*.rds
+data/raw/*
+!data/raw/.gitkeep
+outputs/processed/*
+!outputs/processed/.gitkeep
+
+# Output files
+outputs/figures/*
+!outputs/figures/.gitkeep
+outputs/models/*
+!outputs/models/.gitkeep
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.Renviron
+
+# Temporary files
+*.tmp
+*~

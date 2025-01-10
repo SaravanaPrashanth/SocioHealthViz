@@ -1,4 +1,4 @@
-# Life Expectancy Analysis Project
+# A Comparative Analysis of Life Expectancy Trends in England and Wales
 
 ## Overview
 This project analyzes life expectancy trends and mortality rates in England and Wales, examining the relationships between deprivation indices, avoidable mortality, and regional variations.

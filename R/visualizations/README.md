@@ -5,22 +5,12 @@ This project explores life expectancy trends in England and Wales through variou
 
 ## Project Structure
 ```
-life-expectancy-analysis/
-├── R/
-│   ├── 01_dependencies.R
-│   ├── 02_data_processing.R
-│   ├── 03_visualization.R
-│   ├── 04_analysis.R
-│   └── 05_models.R
-├── data/
-│   └── raw/
-├── outputs/
-│   ├── figures/
-│   ├── processed/
-│   └── models/
-├── .gitignore
-├── README.md
-└── main.R
+SocioHealthViz/
+│
+└── visualizations/
+    ├── life_expectancy_plots.R
+    ├── deprivation_plots.R
+    └── composite_visualization.png
 ```
 
 ## Setup and Installation

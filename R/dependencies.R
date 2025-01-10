@@ -1,0 +1,13 @@
+# dependencies.R
+library(tidyverse)
+library(caret)
+library(corrplot)
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(purrr)
+library(tidyr)
+library(stringr)
+library(randomForest)
+library(gridExtra)
+library(reshape2)

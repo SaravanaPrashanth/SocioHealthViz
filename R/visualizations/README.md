@@ -8,7 +8,7 @@ This project explores life expectancy trends in England and Wales through variou
 SocioHealthViz/
 │
 └── visualizations/
-    ├── life_expectancy_plots.R
+    ├── visualization_plots.R
     ├── deprivation_plots.R
     └── composite_visualization.png
 ```
@@ -51,7 +51,7 @@ source("main.R")
 
 ## File Descriptions
 
-### `life_expectancy_plots.R`
+### `visualization_plots.R`
 Contains R scripts for generating visualizations related to life expectancy analysis. The script processes demographic data and creates various plots including:
 - Time series trends of life expectancy
 - Geographic distribution maps
@@ -63,7 +63,7 @@ Implements visualization routines for deprivation indices, including:
 - Regional comparison plots
 - Correlation analysis with health outcomes
 
-### `composite_visualization.png`
+### `Composite_Visualisation.png`
 A comprehensive visualization that combines key insights from both life expectancy and deprivation analyses, providing a holistic view of socio-health relationships.
 
 ## Outputs and Results

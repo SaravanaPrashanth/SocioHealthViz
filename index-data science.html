@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Expectancy Analysis Project</title>
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #0d47a1;
+            --accent-color: #2962ff;
+            --text-color: #333;
+            --light-bg: #f5f6fa;
+            --success-color: #4caf50;
+            --warning-color: #ff9800;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        section {
+            padding: 3rem 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .visualization {
+            margin: 2rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .visualization img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .metric-card {
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .pipeline-step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--accent-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .code-block {
+            background: #1e1e1e;
+            color: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: 'Consolas', monospace;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Life Expectancy Analysis</h1>
+            <p>A Data Science Project Exploring Global Health Trends</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#pipeline">Data Pipeline</a></li>
+            <li><a href="#visualizations">EDA</a></li>
+            <li><a href="#models">Models</a></li>
+            <li><a href="#results">Results</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="overview">
+            <h2>Project Overview</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Objective</h3>
+                    <p>Analyzing and predicting life expectancy using machine learning models, considering various socio-economic and health indicators.</p>
+                </div>
+                <div class="card">
+                    <h3>Dataset</h3>
+                    <p>Comprehensive life expectancy data including health factors, economic conditions, and social indicators across different regions and time periods.</p>
+                </div>
+                <div class="card">
+                    <h3>Tools Used</h3>
+                    <p>R, tidyverse, caret, ggplot2, and various machine learning packages for model development and evaluation.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pipeline">
+            <h2>Data Science Pipeline</h2>
+            <div class="pipeline-step">
+                <h3>1. Data Processing</h3>
+                <p>Initial data cleaning, handling missing values, and feature engineering performed in 02_data_processing.R</p>
+            </div>
+            <div class="pipeline-step">
+                <h3>2. Exploratory Analysis</h3>
+                <p>Comprehensive EDA using visualization techniques implemented in 03_visualization.R</p>
+            </div>
+            <div class="pipeline-step">
+                <h3>3. Statistical Analysis</h3>
+                <p>Statistical tests and correlation analysis conducted in 04_analysis.R</p>
+            </div>
+            <div class="pipeline-step">
+                <h3>4. Model Development</h3>
+                <p>Machine learning models built and evaluated in 05_models.R</p>
+            </div>
+        </section>
+
+        <section id="visualizations">
+            <h2>Exploratory Data Analysis</h2>
+            <div class="visualization">
+                <h3>Feature Correlations</h3>
+                <img src="/outputs/figures/correlation_matrix.png" alt="Feature Correlations">
+                <p>Correlation analysis of key features affecting life expectancy.</p>
+            </div>
+            <div class="visualization">
+                <h3>Temporal Trends</h3>
+                <img src="/outputs/figures/temporal_analysis.png" alt="Temporal Analysis">
+                <p>Time series analysis of life expectancy trends.</p>
+            </div>
+        </section>
+
+        <section id="models">
+            <h2>Machine Learning Models</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Linear Regression</h3>
+                    <div class="metrics">
+                        <div class="metric-card">
+                            <p>R-squared</p>
+                            <div class="metric-value">0.85</div>
+                        </div>
+                        <div class="metric-card">
+                            <p>RMSE</p>
+                            <div class="metric-value">2.3</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Random Forest</h3>
+                    <div class="metrics">
+                        <div class="metric-card">
+                            <p>R-squared</p>
+                            <div class="metric-value">0.89</div>
+                        </div>
+                        <div class="metric-card">
+                            <p>RMSE</p>
+                            <div class="metric-value">1.8</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Key Findings</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Feature Importance</h3>
+                    <img src="/outputs/figures/feature_importance.png" alt="Feature Importance">
+                    <p>Top predictors of life expectancy identified by our models.</p>
+                </div>
+                <div class="card">
+                    <h3>Predictions</h3>
+                    <img src="/outputs/figures/prediction_accuracy.png" alt="Prediction Accuracy">
+                    <p>Model prediction accuracy across different regions.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Life Expectancy Analysis Project | Introduction to Data Science</p>
+            <p>View the complete project on <a href="https://github.com/yourusername/life-expectancy-analysis" style="color: white;">GitHub</a></p>
+        </div>
+    </footer>
+</body>
+</html>

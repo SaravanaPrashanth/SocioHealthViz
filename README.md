@@ -24,13 +24,16 @@ life-expectancy-analysis/
 ```
 
 ## Setup and Installation
+1. Install R and RStudio:
+   * Visit [RStudio Desktop Download Page](https://posit.co/download/rstudio-desktop/)
+   * Follow the installation instructions for your operating system
 
-1. Clone the repository:
+2. Clone the repository:
 ```bash
 git clone https://github.com/yourusername/SocioHealthViz.git
 ```
 
-2. Install required R packages:
+3. Install required R packages:
 ```R
 install.packages(c(
     "tidyverse",
@@ -47,14 +50,14 @@ install.packages(c(
 ))
 ```
 
-3. Data Requirements:
+4. Data Requirements:
 Place the following files in the `data/raw/` directory:
 - `nlte198020213.xlsx` (England National Life Tables)
 - `nltw198020213.xlsx` (Wales National Life Tables)
 - `englandreferencetable2020.xlsx` (England Reference Tables)
 - `walesreferencetable2020.xlsx` (Wales Reference Tables)
 
-4. Run the analysis:
+5. Run the analysis:
 ```R
 source("main.R")
 ```

@@ -103,6 +103,33 @@
             color: var(--primary-color);
             margin-bottom: 1rem;
         }
+        .visualization img {
+    width: 100%; /* Make sure the image fits within the container */
+    max-width: 1200px; /* Limit the maximum width to prevent it from getting too large */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto; /* Center the image */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.visualization {
+    margin: 2rem 0;
+    padding: 2rem; /* Increase padding for better spacing */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center; /* Center the content inside */
+}
+
+@media (max-width: 768px) {
+    .visualization {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+
+    .visualization img {
+        max-width: 100%; /* Allow image to scale down on smaller screens */
+    }
+}
+
 
         footer {
             background-color: var(--primary-color);

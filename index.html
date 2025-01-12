@@ -330,7 +330,50 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- Add this section after the Overview section and before the Pipeline section -->
+        <section id="research">
+            <h2>Research Questions and Findings</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Life Expectancy Trends</h3>
+                    <p><strong>Question:</strong> What are the trends in life expectancy in England and Wales, considering demographic and socioeconomic variables?</p>
+                    <p><strong>Finding:</strong> The analysis revealed that socio-economic factors significantly impact life expectancy trends. Higher levels of deprivation correlate with shorter life expectancies, with mortality rates from avoidable causes playing a crucial role.</p>
+                </div>
+                <div class="card">
+                    <h3>Prediction Accuracy</h3>
+                    <p><strong>Question:</strong> How well can life expectancy be predicted using mortality rates, deprivation deciles, and Slope Index of Inequality?</p>
+                    <p><strong>Finding:</strong> The Random Forest model demonstrated superior performance in predicting life expectancy by effectively capturing complex relationships between socio-economic factors, significantly outperforming Linear Regression.</p>
+                </div>
+                <div class="card">
+                    <h3>Mortality Rate Comparison</h3>
+                    <p><strong>Question:</strong> How do England and Wales's mortality rates compare to avoidable and treatable deaths by age and sex?</p>
+                    <p><strong>Finding:</strong> Strong correlations were found between avoidable deaths and high mortality rates, particularly in younger age groups. Treatable diseases showed higher mortality rates in economically disadvantaged areas, suggesting a direct link between living conditions and health outcomes.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modified Pipeline section -->
+        <section id="pipeline">
+            <h2>Data Science Pipeline</h2>
+            <div class="pipeline-step">
+                <h3>1. Data Processing</h3>
+                <p>Initial data cleaning, handling missing values, and feature engineering. <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/tree/gh-pages/R/data-processing" target="_blank">View code</a></p>
+            </div>
+            <div class="pipeline-step">
+                <h3>2. Exploratory Analysis</h3>
+                <p>Comprehensive EDA using visualization techniques. <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/tree/gh-pages/R/visualizations" target="_blank">View code</a></p>
+            </div>
+            <div class="pipeline-step">
+                <h3>3. Statistical Analysis</h3>
+                <p>Statistical tests and correlation analysis. <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/tree/gh-pages/R/analysis" target="_blank">View code</a></p>
+            </div>
+            <div class="pipeline-step">
+                <h3>4. Model Development</h3>
+                <p>Machine learning models built and evaluated. <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/blob/gh-pages/R/model/predictive_models.R" target="_blank">View code</a></p>
+            </div>
+        </section>
+<!--
         <section id="pipeline">
             <h2>Data Science Pipeline</h2>
             <div class="pipeline-step">
@@ -350,7 +393,7 @@
                 <p>Machine learning models built and evaluated in `R/model`</p>
             </div>
         </section>
-
+-->
         <section id="visualizations">
             <h2>Exploratory Data Analysis</h2>
             <div class="visualization">
@@ -416,6 +459,21 @@
                         <li>Our model was able to make reliable predictions about life expectancy trends based on past data.</li>
                     </ul>
                 </div>
+            </div>
+        </section>
+        <!-- Add this section after the Results section and before the footer -->
+        <section id="instructions">
+            <h2>Getting Started with the Code</h2>
+            <div class="card">
+                <h3>Installation and Usage</h3>
+                <p>For detailed instructions on how to download, set up, and run this analysis on your own machine, please refer to our comprehensive <a href="https://github.com/username/repo/blob/main/README.md" target="_blank">README</a> file.</p>
+                <p>The README includes:</p>
+                <ul>
+                    <li>Prerequisites and dependencies</li>
+                    <li>Step-by-step installation guide</li>
+                    <li>Instructions for running the analysis</li>
+                    <li>Data sources and structure</li>
+                </ul>
             </div>
         </section>
         

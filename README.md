@@ -30,7 +30,7 @@ life-expectancy-analysis/
 
 2. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/SocioHealthViz.git
+git clone https://github.com/SaravanaPrashanth/SocioHealthViz.git
 ```
 
 3. Install required R packages:

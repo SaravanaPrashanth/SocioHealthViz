@@ -5,21 +5,23 @@ This project analyzes life expectancy trends and mortality rates in England and 
 
 ## Project Structure
 ```
-life-expectancy-analysis/
+SocioHealthViz/
 ├── R/
-│   ├── 01_dependencies.R
-│   ├── 02_data_processing.R
-│   ├── 03_visualization.R
-│   ├── 04_analysis.R
-│   └── 05_models.R
+|   ├── analysis/
+│   ├── data-processing/
+│   ├── model/
+│   ├── visualizations/
+│   ├── dependencies.R
 ├── data/
-│   └── raw/
-├── outputs/
-│   ├── figures/
 │   ├── processed/
-│   └── models/
+|   ├── raw/
+├── outputs/
+│   ├── charts/
+│   └── model/
 ├── .gitignore
+├──  LICENSE.md
 ├── README.md
+├── index-data science.html
 └── main.R
 ```
 

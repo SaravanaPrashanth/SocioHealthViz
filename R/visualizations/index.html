@@ -32,6 +32,38 @@
             padding: 2rem 0;
             text-align: center;
         }
+         .research-question {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .research-question h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .research-question p {
+            margin-bottom: 1rem;
+        }
+
+        .visualization {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .visualization img {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+        }
 
         .container {
             max-width: 1200px;
@@ -199,13 +231,46 @@
         </section>
 
         <section id="visualizations">
-    <h2>Key Visualizations</h2>
-    <div class="visualization">
-        <h3>Life Expectancy and Deprivation Analysis</h3>
-        <img src="R/visualizations/Composite_Visualisation.png" alt="Composite Chart of Life Expectancy and Deprivation">
-        <p>Composite analysis of life expectancy trends and deprivation indices across multiple demographic groups and regions, providing insights into health disparities.</p>
-    </div>
-</section>
+    <section id="visualizations">
+            <h2>Research Questions & Findings</h2>
+            
+            <div class="research-question">
+                <h3>1. Life Expectancy Trends (2005-2023)</h3>
+                <p><strong>Question:</strong> What are the trends in life expectancy for males and females in England and Wales from 2005 to 2023?</p>
+                <p><strong>Findings:</strong> The analysis shows consistently higher life expectancy for females compared to males in both regions. England generally maintains slightly higher life expectancy than Wales. There's a notable upward trend until 2015, followed by a slight decline in recent years, particularly noticeable during 2020. Female life expectancy in England reaches approximately 37 years, while males in Wales show the lowest values at around 33 years.</p>
+                <div class="visualization">
+                    <img src="R/visualizations/outputs/charts/Enhanced Line Chart Q1.png" alt="Life Expectancy Trends">
+                </div>
+            </div>
+
+            <div class="research-question">
+                <h3>2. Mortality Rates by Demographics</h3>
+                <p><strong>Question:</strong> How do mortality rates vary by age group and sex across different years?</p>
+                <p><strong>Findings:</strong> The box plot reveals that mortality rates generally increase with age across both England and Wales. Males consistently show higher mortality rates than females across all age groups. The disparity becomes more pronounced in older age groups (40-60 years). Both regions show similar patterns, though Wales exhibits slightly higher variability in mortality rates.</p>
+                <div class="visualization">
+                    <img src="R/visualizations/outputs/charts/Mortality Rates by Age and Sex.png" alt="Mortality Rates Analysis">
+                </div>
+            </div>
+
+            <div class="research-question">
+                <h3>3. Avoidable Mortality and Deprivation</h3>
+                <p><strong>Question:</strong> What are the disparities in avoidable mortality rates between deprivation deciles in England and Wales from 2011 to 2020?</p>
+                <p><strong>Findings:</strong> There's a clear correlation between deprivation and avoidable mortality rates. The most deprived areas (decile 1) show mortality rates nearly three times higher than the least deprived areas (decile 10). Wales generally shows higher rates across all deciles compared to England, with the gap widening in more deprived areas.</p>
+                <div class="visualization">
+                    <img src="R/visualizations/outputs/charts/Enhanced Disparities in Avoidable Mortality Rates.png" alt="Avoidable Mortality Analysis">
+                </div>
+            </div>
+
+            <div class="research-question">
+                <h3>4. Inequality Trends Over Time</h3>
+                <p><strong>Question:</strong> How does the slope index of inequality (SII) for avoidable mortality change across deprivation quintiles over time?</p>
+                <p><strong>Findings:</strong> The heatmap shows the evolution of health inequalities from 2005 to 2020. Darker colors indicate higher inequality levels. Both England and Wales show persistent patterns of inequality, with some variations over time. Males generally experience higher inequality levels than females, as indicated by the more intense colors in the male sections of both regions.</p>
+                <div class="visualization">
+                    <img src="R/visualizations/outputs/charts/SII trends.png" alt="Inequality Index Trends">
+                </div>
+            </div>
+        </section>
+
 
         <section id="analysis">
             <h2>Analysis Results</h2>
@@ -227,12 +292,12 @@
                 <div class="card">
                     <h3>Setup Instructions</h3>
                     <p>Follow our comprehensive guide to run the analysis on your local machine.</p>
-                    <a href="#" class="button">View Setup Guide</a>
+                    <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/blob/gh-pages/R/visualizations/README.md" class="button">View Setup Guide</a>
                 </div>
                 <div class="card">
                     <h3>Code Documentation</h3>
                     <p>Access detailed documentation of our R scripts and analysis pipeline.</p>
-                    <a href="#" class="button">View Documentation</a>
+                    <a href="https://github.com/SaravanaPrashanth/SocioHealthViz/tree/gh-pages/R/visualizations" class="button">View Documentation</a>
                 </div>
             </div>
         </section>
